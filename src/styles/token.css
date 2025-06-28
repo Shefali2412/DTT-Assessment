@@ -1,0 +1,13 @@
+:root {
+    --accent: #EB5440;
+    --radius: 6px;
+    --font:   system-ui, sans-serif;
+  }
+  
+  
+  @media (max-width: 600px) {
+    :root { --side-pad: 1rem }
+  }
+  @media (min-width: 601px) {
+    :root { --side-pad: 2rem }
+  }
