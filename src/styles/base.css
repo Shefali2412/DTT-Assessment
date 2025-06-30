@@ -1,0 +1,125 @@
+/* -------------------------------
+   Root Variables & Typography
+-------------------------------- */
+:root {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  --h1-desktop: 32px;
+  --h1-mobile: 18px;
+
+  --h2-desktop: 22px;
+  --h2-mobile: 14px;
+
+  --text-body-desktop: 18px;
+  --text-body-mobile: 12px;
+
+  --text-input: 14px;
+  --text-error: 14px;
+  --text-listing: 16px;
+  --button-tab-desktop: 18px;
+  --button-tab-mobile: 12px;
+
+  --color-text: #000;
+  --color-bg: #fff;
+  --color-error: #e63946;
+}
+
+/* -------------------------------
+   Base Reset + Global Styles
+-------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-desktop);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* -------------------------------
+   Headings
+-------------------------------- */
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--h1-desktop);
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2-desktop);
+  font-weight: 600;
+}
+
+/* -------------------------------
+   Navigation & UI Text
+-------------------------------- */
+button,
+.nav a,
+.tabs a {
+  font-family: var(--font-heading);
+  font-size: var(--button-tab-desktop);
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------------------
+   Form Inputs
+-------------------------------- */
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+  font-size: var(--text-input);
+  line-height: 1.4;
+  padding: 0.5rem;
+}
+
+/* -------------------------------
+   Error Messages
+-------------------------------- */
+.error {
+  font-size: var(--text-error);
+  color: var(--color-error);
+}
+
+/* -------------------------------
+   Responsive Typography
+-------------------------------- */
+@media (max-width: 600px) {
+  html, body {
+    font-size: var(--text-body-mobile);
+  }
+
+  h1 {
+    font-size: var(--h1-mobile);
+  }
+
+  h2 {
+    font-size: var(--h2-mobile);
+  }
+
+  button,
+  .nav a,
+  .tabs a {
+    font-size: var(--button-tab-mobile);
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 12px;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+}
