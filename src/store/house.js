@@ -1,10 +1,9 @@
 // Central Pinia store for house listings
 
+import { defineStore } from "pinia";
+import * as api from "@/services/api";
 
-import { defineStore } from 'pinia';
-import * as api from '@/services/api';
-
-export const useHouseStore = defineStore('houses', {
+export const useHouseStore = defineStore("houses", {
   state: () => ({
     /** current list fetched from API */
     list: [],

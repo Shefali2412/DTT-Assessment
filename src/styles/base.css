@@ -2,8 +2,8 @@
    Root Variables & Typography
 -------------------------------- */
 :root {
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
   --h1-desktop: 32px;
   --h1-mobile: 18px;
@@ -34,7 +34,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-body);
   font-size: var(--text-body-desktop);
   color: var(--color-text);
@@ -95,7 +96,8 @@ select {
    Responsive Typography
 -------------------------------- */
 @media (max-width: 600px) {
-  html, body {
+  html,
+  body {
     font-size: var(--text-body-mobile);
   }
 
