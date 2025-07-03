@@ -2,9 +2,38 @@
    Root Variables & Typography
 -------------------------------- */
 :root {
+
+   /* Color palette  */
+   
+  --color-primary: #EB5440; 
+  --color-secondary: #4A4B4C;
+  --color-tertiary-1: #E8E8E8;
+  --color-tertiary-2: #C3C3C3;
+  --color-text: #000;
+  --color-bg-1: #F6F6F6;
+  --color-bg-2: #FFFFFF;
+  --color-text-primary: #000000;
+  --color-text-secondary: #4A4B4C;
+  --color-text-hyperlink: #067BC2;
+
+  /* Font families */
+ 
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Open Sans", sans-serif;
 
+  /* Font weights */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+   /* Font Style */
+
+  --heading-font-style-italic: italic;
+
+  /* Font Sizes */
+  
   --h1-desktop: 32px;
   --h1-mobile: 18px;
 
@@ -14,20 +43,20 @@
   --text-body-desktop: 18px;
   --text-body-mobile: 12px;
 
-  --text-input: 14px;
-  --text-error: 14px;
-  --text-listing: 16px;
+  --text-input-desktop: 14px;
+  --text-input-mobile: 12px;
+
+  --text-empty-desktop: 18px;
+  --text-empty-mobile: 14px;
+
   --button-tab-desktop: 18px;
   --button-tab-mobile: 12px;
 
-  --color-text: #000;
-  --color-bg-1: #F6F6F6;
-  --color-bg-2: #fff;
-  --color-error: #e63946;
-  --color-tertiary: #E8E8E8;
+  --nav-active-desktop: 18px;
+  --nav-inactive-desktop: 18px;
+  --back-button-desktop: 16px;
 
-  --side-pad: clamp(1rem, 5vw, 7rem);
-}
+ }
 
 /* -------------------------------
    Base Reset + Global Styles
@@ -42,63 +71,79 @@ html,
 body {
   font-family: var(--font-body);
   font-size: var(--text-body-desktop);
-  color: var(--color-text);
-  background: var(--color-bg);
+  background-color: var(--color-bg-1);
+  color: var(--color-text-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/* -------------------------------
-   Headings
--------------------------------- */
+/* Typography Rules */
 h1 {
   font-family: var(--font-heading);
   font-size: var(--h1-desktop);
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 h2 {
   font-family: var(--font-heading);
   font-size: var(--h2-desktop);
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
 }
 
-/* -------------------------------
-   Navigation & UI Text
--------------------------------- */
+p,
+label {
+  font-family: var(--font-body);
+  font-size: var(--text-body-desktop);
+  font-weight: var(--weight-regular);
+}
+
+.back-button {
+  font-size: var(--back-button-desktop);
+  font-weight: var(--weight-medium);
+}
+
+.error {
+  font-size: var(--text-error-desktop);
+  font-weight: var(--weight-medium);
+  font-style: var(--font-style-italic);
+  color: var(--color-error);
+}
+
+/* Navigation & UI Text */
+.nav-link {
+  font-family: var(--font-heading);
+  font-size: var(--nav-inactive-desktop);
+  font-weight: var(--weight-regular);
+  opacity: 0.5;
+}
+
+.nav-link.active {
+  font-family: var(--font-heading);
+  font-size: var(--nav-active-desktop);
+  font-weight: var(--weight-semibold);
+}
+
 button,
-.nav a,
 .tabs a {
   font-family: var(--font-heading);
   font-size: var(--button-tab-desktop);
-  font-weight: 600;
+  font-weight: var(--weight-medium);
   text-decoration: none;
   color: inherit;
 }
 
-/* -------------------------------
-   Form Inputs
--------------------------------- */
+/* Inputs & Form Elements */
 input,
 textarea,
 select {
   font-family: var(--font-body);
-  font-size: var(--text-input);
+  font-size: var(--text-input-desktop);
+  font-weight: var(--weight-regular);
   line-height: 1.4;
   padding: 0.5rem;
 }
 
-/* -------------------------------
-   Error Messages
--------------------------------- */
-.error {
-  font-size: var(--text-error);
-  color: var(--color-error);
-}
-
-/* -------------------------------
-   Responsive Typography
--------------------------------- */
+/* Responsive Adjustments */
 @media (max-width: 600px) {
   html,
   body {
@@ -113,19 +158,24 @@ select {
     font-size: var(--h2-mobile);
   }
 
+  .nav-link,
+  .nav-link.active,
   button,
-  .nav a,
   .tabs a {
     font-size: var(--button-tab-mobile);
+  }
+
+  .error {
+    font-size: var(--text-error-mobile);
   }
 
   input,
   textarea,
   select {
-    font-size: 12px;
+    font-size: var(--text-input-mobile);
   }
 
-  .error {
-    font-size: 12px;
+  .back-button {
+    font-size: var(--text-input-mobile);
   }
 }
