@@ -23,6 +23,8 @@
   --color-text: #000;
   --color-bg: #fff;
   --color-error: #e63946;
+
+  --side-pad: clamp(1rem, 5vw, 7rem);
 }
 
 /* -------------------------------

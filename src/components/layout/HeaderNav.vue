@@ -31,6 +31,7 @@
   height: 100%;
   gap: 2rem;
   padding-left: 7rem;
+  
 }
 .logo {
   height: 32px;
@@ -46,13 +47,14 @@
   position: relative;
   text-decoration: none;
   transition: color 0.3s ease;
+  color: #000000;
 }
 
 .nav-links ::v-deep(.active-link) {
-  color: grey;
+  color:#E8E8E8;
 }
 
-.nav-links a[aria-current]::after {
+/* .nav-links a[aria-current]::after {
   content: "";
   position: absolute;
   left: 0;
@@ -60,7 +62,7 @@
   bottom: -4px;
   height: 2px;
   background: var(--accent);
-}
+} */
 @media (max-width: 600px) {
   .nav {
     height: 56px;
