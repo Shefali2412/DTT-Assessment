@@ -21,8 +21,10 @@
   --button-tab-mobile: 12px;
 
   --color-text: #000;
-  --color-bg: #fff;
+  --color-bg-1: #F6F6F6;
+  --color-bg-2: #fff;
   --color-error: #e63946;
+  --color-tertiary: #E8E8E8;
 
   --side-pad: clamp(1rem, 5vw, 7rem);
 }

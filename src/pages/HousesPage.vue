@@ -1,5 +1,6 @@
 <template>
     <div class="houses-page">
+        <HouseSearch />
         <h1>Houses</h1> 
         <HouseCard />
     </div>
@@ -7,18 +8,20 @@
 
 <script>
 import HouseCard from '@/components/house/HouseCard.vue';
+import HouseSearch from "@/components/house/HouseSearch.vue";
 
 export default {
   name: 'HousesPage',
   components: {
-    HouseCard,
+    // HouseCard,
+    HouseSearch
   },
 };
 </script>
 
 <style scoped>
 .houses-page {
-  padding: 2rem;
+  
 }
 </style>
 
