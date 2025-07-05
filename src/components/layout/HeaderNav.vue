@@ -30,7 +30,7 @@
   justify-content: flex-start;
   height: 100%;
   gap: 2rem;
-  padding-left: 7rem;
+  padding-left: 15rem;
   
 }
 .logo {
@@ -65,15 +65,16 @@
 } */
 @media (max-width: 600px) {
   .nav {
-    height: 56px;
-    flex-direction: column;
+    /* height: 56px;
+    flex-direction: column; */
+    display: none;
   }
-  .nav-inner {
+  /* .nav-inner {
     flex-direction: column;
     align-items: flex-start;
   }
   .nav-links {
     gap: 1rem;
-  }
+  } */
 }
 </style>

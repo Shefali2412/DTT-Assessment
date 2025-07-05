@@ -1,7 +1,6 @@
 <template>
     <div class="houses-page">
         <HouseSearch />
-        <h1>Houses</h1> 
         <HouseCard />
     </div>
 </template>
@@ -21,7 +20,13 @@ export default {
 
 <style scoped>
 .houses-page {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-bg-1);
+  min-height: 100vh;
+  padding: 2rem 2rem 0 7rem; 
+  padding-left: px;
 }
 </style>
 
