@@ -1,0 +1,179 @@
+/*Root Variables & Typography*/
+:root {
+
+   /* Color palette  */
+   
+  --color-primary: #EB5440; 
+  --color-secondary: #4A4B4C;
+  --color-tertiary-1: #E8E8E8;
+  --color-tertiary-2: #C3C3C3;
+  --color-text: #000;
+  --color-bg-1: #F6F6F6;
+  --color-bg-2: #FFFFFF;
+  --color-text-primary: #000000;
+  --color-text-secondary: #4A4B4C;
+  --color-text-hyperlink: #067BC2;
+
+  /* Font families */
+ 
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* Font weights */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+   /* Font Style */
+
+  --heading-font-style-italic: italic;
+
+  /* Font Sizes */
+  
+  --h1-desktop: 32px;
+  --h1-mobile: 18px;
+
+  --h2-desktop: 22px;
+  --h2-mobile: 14px;
+
+  --text-body-desktop: 18px;
+  --text-body-mobile: 12px;
+
+  --text-input-desktop: 14px;
+  --text-input-mobile: 12px;
+
+  --text-empty-desktop: 18px;
+  --text-empty-mobile: 14px;
+
+  --button-tab-desktop: 18px;
+  --button-tab-mobile: 12px;
+
+  --nav-active-desktop: 18px;
+  --nav-inactive-desktop: 18px;
+  --back-button-desktop: 16px;
+
+ }
+
+/* -------------------------------
+   Base Reset + Global Styles
+-------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-desktop);
+  background-color: var(--color-bg-1);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Rules */
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--h1-desktop);
+  font-weight: var(--weight-bold);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2-desktop);
+  font-weight: var(--weight-semibold);
+}
+
+p,
+label {
+  font-family: var(--font-body);
+  font-size: var(--text-body-desktop);
+  font-weight: var(--weight-regular);
+}
+
+.back-button {
+  font-size: var(--back-button-desktop);
+  font-weight: var(--weight-medium);
+}
+
+.error {
+  font-size: var(--text-error-desktop);
+  font-weight: var(--weight-medium);
+  font-style: var(--font-style-italic);
+  color: var(--color-error);
+}
+
+/* Navigation & UI Text */
+.nav-link {
+  font-family: var(--font-heading);
+  font-size: var(--nav-inactive-desktop);
+  font-weight: var(--weight-regular);
+  opacity: 0.5;
+}
+
+.nav-link.active {
+  font-family: var(--font-heading);
+  font-size: var(--nav-active-desktop);
+  font-weight: var(--weight-semibold);
+}
+
+button,
+.tabs a {
+  font-family: var(--font-heading);
+  font-size: var(--button-tab-desktop);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Inputs & Form Elements */
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+  font-size: var(--text-input-desktop);
+  font-weight: var(--weight-regular);
+  line-height: 1.4;
+  padding: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: var(--text-body-mobile);
+  }
+
+  h1 {
+    font-size: var(--h1-mobile);
+  }
+
+  h2 {
+    font-size: var(--h2-mobile);
+  }
+
+  .nav-link,
+  .nav-link.active,
+  button,
+  .tabs a {
+    font-size: var(--button-tab-mobile);
+  }
+
+  .error {
+    font-size: var(--text-error-mobile);
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: var(--text-input-mobile);
+  }
+
+  .back-button {
+    font-size: var(--text-input-mobile);
+  }
+}
