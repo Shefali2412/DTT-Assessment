@@ -4,5 +4,6 @@ export default createRouter({
   routes: [
     { path: "/", component: () => import("@/pages/HousesPage.vue") },
     { path: "/about",component: () => import("@/pages/AboutPage.vue"),},
+    { path: "/create-new-listing",component: () => import("@/pages/CreateNewListingPage.vue"),},
   ],
 });

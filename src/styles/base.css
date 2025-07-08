@@ -69,7 +69,7 @@ html,
 body {
   font-family: var(--font-body);
   font-size: var(--text-body-desktop);
-  background-color: var(--color-bg-1);
+  /* background-color: var(--color-bg-1); */
   color: var(--color-text-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
