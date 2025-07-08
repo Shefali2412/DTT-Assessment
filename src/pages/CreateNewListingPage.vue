@@ -14,13 +14,11 @@ import HouseForm from '@/components/house/HouseForm.vue';
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 95vh;
   width: 100%;
   overflow: hidden;
-  
   box-sizing: border-box;
 }
 </style>
