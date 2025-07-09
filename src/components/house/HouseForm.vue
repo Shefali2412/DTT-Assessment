@@ -171,6 +171,7 @@
 
   }
 
+
   .form-group-3 {
     display: flex;
     flex-direction: column;
@@ -228,7 +229,7 @@ textarea {
 
 .post-button {
   display: flex;
-  justify-content: flex-end; /* Pushes button to the right */
+  justify-content: flex-end; 
   margin-top: 1rem;
   }
 
@@ -237,24 +238,24 @@ textarea {
   font-size: var(--button-tab-desktop);
   font-family: var(--font-body);
   font-weight: var(--weight-bold);
-  background-color: var(--color-primary);/* Deep navy tone */
+  background-color: var(--color-primary);
   color: var(--color-tertiary-1);
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(228, 200, 200, 0.12); /* Soft elevation */
+  box-shadow: 0 4px 12px rgba(228, 200, 200, 0.12); 
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-button:hover {
-  background-color: #2f3b5c; /* Slight hover shift */
+  background-color: #2f3b5c; 
   transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
   .create-listing {
     padding: 1rem;
-    margin-top: 0;
+    margin-top: -20px;
     flex-direction: column;
   }
 
@@ -263,31 +264,56 @@ textarea {
     padding: 1rem;
     max-width: 100%;
   }
+  .back-text p {
+    display: none;
+  }
+
+  .Create-new-title p {
+    font-size: var(--h1-mobile);
+    margin-left: 100px;
+    margin-top: -32px;
+    
+  }
 
   .form-group-2 {
-    flex-direction: column;
-    gap: 1rem; /* stack vertical for mobile */
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .form-label  {
+      font-size: var(--text-input-mobile);
+  }
+
+  input,select,textarea {
+  font-size: var(--text-input-mobile);
+
+  }
+
+  .form-group-2 input{
+    padding: 0.75rem 1.8rem;
   }
 
   .post-button {
-    justify-content: center; /* optionally center on small screens */
+    justify-content: center; 
   }
 
   .form-button {
     width: 100%;
     padding: 0.75rem 1rem;
-    font-size: 1rem; /* fallback if var isn’t responsive */
+    font-size: 1rem; 
+    margin-bottom: 50px;
   }
 
   textarea {
-    min-height: 180px; /* roomier for mobile typing */
+    min-height: 100px; 
   }
 
   .upload-box {
-    width: 100%;
-    height: auto;
+    width: 25%;
+    height: 80%;
     aspect-ratio: 1 / 1;
   }
+  
 }
 
 </style>
