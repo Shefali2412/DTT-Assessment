@@ -18,7 +18,7 @@ import CreateButton from '@/components/house/CreateButton.vue';
 export default {
   name: 'HousesPage',
   components: {
-    // HouseCard,
+    HouseCard,
     HouseSearch,
     CreateButton
     

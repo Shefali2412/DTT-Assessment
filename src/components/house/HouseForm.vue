@@ -51,7 +51,7 @@
                 <input id="size" type="text" placeholder="e.g.60m2" />
               </div>
               <div class="house-garage">
-                <label for="garage" class="form-label">Garage</label>
+                <label for="garage" class="form-label">Garage*</label>
                 <select id="garage-select" class="form-select">
                   <option value="">Select</option>
                   <option value="yes">Yes</option>
@@ -65,7 +65,7 @@
                 <input id="bedrooms" type="text" placeholder="Enter amount" />
               </div>
               <div class="house-bathrooms">
-                <label for="bathrooms" class="form-label">Bathrooms</label>
+                <label for="bathrooms" class="form-label">Bathrooms*</label>
                 <input id="bathrooms" type="text" placeholder="Enter amount" />
               </div>
              </div>
