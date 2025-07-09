@@ -91,7 +91,7 @@ h2 {
 p,
 label {
   font-family: var(--font-body);
-  font-size: var(--text-body-desktop);
+  font-size: var(--text-input-desktop);
   font-weight: var(--weight-regular);
 }
 
